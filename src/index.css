@@ -1,0 +1,175 @@
+:root {
+  --color-lightest: #fff4e6;
+  --color-light: #ffe8cc;
+  --color-medium: #ffa94d;
+  --color-dark: #ff922b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  /* width: 100%;
+  height: 100vh;
+  position: relative; */
+  display: flex;
+  margin-top: 100px;
+  gap: 32px;
+}
+
+.list-container {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* position: absolute;
+  top: 100px;
+  left: 200px; */
+}
+
+.list-container .add-friend-btn {
+  align-self: flex-end;
+  margin-right: 16px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 12px;
+
+  cursor: default;
+  transition: background-color 0.3s ease;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.content p {
+  font-weight: bold;
+}
+
+.content span {
+  font-size: 12px;
+}
+
+.list-item:hover {
+  background-color: #fff4e6;
+}
+
+/* Add Form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.close-btn {
+  align-self: flex-end;
+  margin-right: 16px;
+}
+
+.add-form {
+  background-color: #ffe8cc;
+  padding: 16px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-item input {
+  font-size: 14px;
+  padding: 4px;
+  outline: none;
+  width: 150px;
+  text-align: center;
+}
+
+.add-btn {
+  align-self: flex-end;
+  width: 150px;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #ffa94d;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff922b;
+}
+
+/* Bill Form */
+.bill-form-container {
+  width: 350px;
+  height: 310px;
+  /* position: absolute;
+  top: 100px;
+  left: 550px;   */
+  padding: 24px;
+  background-color: #ffe8cc;
+  border-radius: 12px;
+}
+
+.bill-form {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.split-bill-btn {
+  align-self: flex-end;
+  width: 150px;
+}
+
+.bill-form-container select {
+  width: 100px;
+  padding: 4px;
+}
