@@ -64,6 +64,7 @@ const App = () => {
       />
       {isBillOpen && (
         <SplitBillForm
+          key={friends[selectedFrnd].id}
           friend={friends.find((friend) => friend.id === selectedFrnd)}
           handleBillForm={handleBillForm}
         />
